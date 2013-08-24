@@ -2,8 +2,9 @@
   "name": "git",
   "version": "0.0.0",
   "dependencies": {
-    "jquery":"~2.0",
+    "jquery": "~2.0.3",
     "angular": "~1.0.8",
+    "angular-firebase": "~0.0.2",
     "json3": "~3.2.4",
     "es5-shim": "~2.1.0"
   },

@@ -42,9 +42,17 @@
     <script src="bower_components/jquery/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
 
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
-        <!-- endbuild -->
+    <!-- build:js({.tmp,app}) scripts/firebase.js -->
+    <script src="https://cdn.firebase.com/v0/firebase.js"></script>
+    <script src="bower_components/angular-firebase/ng-firebase.js"></script>
+    <script src="bower_components/angular-firebase/ng-firebase-collection.js"></script>
+    <script src="bower_components/angular-firebase/ng-firebase-binding.js"></script>
+    <!-- endbuild -->
+
+
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <!-- endbuild -->
 </body>
 </html>
