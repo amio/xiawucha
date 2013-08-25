@@ -1,7 +1,7 @@
 'use strict';
 
-angular.module('gitApp', [])
-  .config(function ($routeProvider) {
+window.App = angular.module('gitApp', ['firebase']);
+App.config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
