@@ -33,6 +33,7 @@ h1 {
     font-weight: bold;
     line-height: 15px;
     border-radius: 4px;
+    background-color: #2BA5E0;
 }
 
 .order-count {
@@ -102,13 +103,13 @@ h1 {
     border-radius: 0 5px 5px 0;
 }
 
-.item-del {
+.item-stat {
     position: absolute;
     padding: 0;
     width: 30px;
     height: 30px;
     top: 0;
-    left: 0;
+    left: 70px;
     font-family: Arial, sans-serif;
     font-size: 12px;
     line-height: 28px;
