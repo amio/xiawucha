@@ -1,5 +1,4 @@
-
-  <h1>Xia 5 Cha</h1>
+<h1>Xia 5 Cha</h1>
 
 <div class="hero-unit">
   <form class="order-form pure-form pure-g-r" ng-submit="addOne(newItem)">
@@ -8,7 +7,7 @@
     <button class="pure-u-1-6 pure-button pure-button-primary" type="submit">+</button>
   </form>
 
-  <div class="order-count">
+  <div ng-show="list.length" class="order-count">
     <i class="order-count-tip">TOTAL</i>
     {{list.length}}
   </div>
