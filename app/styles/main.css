@@ -70,7 +70,7 @@ h1 {
 
 .order-list li {
     margin: 0.4em 0;
-    padding-left: 100px;
+    padding-left: 70px;
     position: relative;
 }
 
@@ -109,7 +109,7 @@ h1 {
     width: 30px;
     height: 30px;
     top: 0;
-    left: 70px;
+    left: 40px;
     font-family: Arial, sans-serif;
     font-size: 12px;
     line-height: 28px;
