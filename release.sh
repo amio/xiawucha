@@ -4,4 +4,5 @@ rm -rf `ls | egrep -v '(dist|node_modules)'`
 mv dist/* .
 git add -A
 git commit
+git push
 git checkout master
