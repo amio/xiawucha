@@ -15,7 +15,7 @@
   <ul class="pure-g order-list">
   	<li ng-repeat="item in list">
       <span class="item-name pure-u-1-6" title="{{item.name}}">{{item.name}}</span>
-      <span class="item-desc pure-u-2-3">{{item.want}}</span>
+      <span class="item-desc pure-u-2-3" ng-click="setDesc(item)">{{item.want}}</span>
       <span class="item-stat item-del" ng-click="list.remove(item)" ng-show="item.name == userName"><i class="icon-torso"></i><i class="icon-cancel"></i></span>
     </li>
   </ul>

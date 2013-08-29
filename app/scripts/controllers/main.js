@@ -32,4 +32,8 @@ App.controller('MainCtrl', function ($scope, angularFireCollection) {
     $scope.userWant = '';
     return false;
   };
+
+  $scope.setDesc = function(item){
+    $scope.userWant = item.want;
+  }
 });
