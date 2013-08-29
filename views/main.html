@@ -1,9 +1,9 @@
 <h1>Xia 5 Cha</h1>
 
 <div class="hero-unit">
-  <form class="order-form pure-form pure-g-r" ng-submit="addOne(newItem)">
-    <input class="pure-u-1-6" type="text" ng-model="newItem.name" placeholder="客官" required="">
-    <input class="pure-u-3-5" type="text" ng-model="newItem.desc" placeholder="来点儿什么？">
+  <form class="order-form pure-form pure-g-r" ng-submit="doOrder()">
+    <input class="pure-u-1-6" type="text" ng-model="userName" placeholder="客官" required="">
+    <input class="pure-u-3-5" type="text" ng-model="userWant" placeholder="来点儿什么？">
     <button class="pure-u-1-6 pure-button pure-button-primary" type="submit">+</button>
   </form>
 
@@ -14,9 +14,9 @@
 
   <ul class="pure-g order-list">
   	<li ng-repeat="item in list">
-      <span class="item-name pure-u-1-6">{{item.name}}</span>
-      <span class="item-desc pure-u-2-3">{{item.desc}}</span>
-      <span class="item-stat item-del" ng-click="list.remove(item)" ng-show="item.name == newItem.name"><i class="icon-torso"></i><i class="icon-cancel"></i></span>
+      <span class="item-name pure-u-1-6" title="{{item.name}}">{{item.name}}</span>
+      <span class="item-desc pure-u-2-3">{{item.want}}</span>
+      <span class="item-stat item-del" ng-click="list.remove(item)" ng-show="item.name == userName"><i class="icon-torso"></i><i class="icon-cancel"></i></span>
     </li>
   </ul>
 </div>
