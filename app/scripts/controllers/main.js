@@ -10,8 +10,9 @@ App.controller('MainCtrl', function ($scope, angularFireCollection) {
     });
   }
 
-  var today = (new Date).toISOString().substr(0,10);
-  var fireRef = new Firebase( 'https://xiawucha.firebaseio.com/orderlists/' + today );
+  var timeOffset = 1000*60*(new Date).getTimezoneOffset();
+  var todayNum = Math.floor( (Date.now() - timeOffset) / (1000*60*60*24) );
+  var fireRef = new Firebase( 'https://xiawucha.firebaseio.com/orderlists/' + todayNum );
   $scope.list = angularFireCollection( fireRef, $scope, "list", {} );
 
   $scope.doOrder = function(){
