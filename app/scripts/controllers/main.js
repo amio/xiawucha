@@ -16,8 +16,8 @@ App.controller('MainCtrl',
     });
   }
 
-  var todayNum = Math.floor( Date.now()/ (60*60*24*1000) + 0.333334 );
-  var fireRef = new Firebase( 'https://xiawucha.firebaseio.com/orderlists/' + todayNum );
+  var today = (new Date).toISOString().substr(0,10);
+  var fireRef = new Firebase( 'https://xiawucha.firebaseio.com/orderlists/' + today );
   console.log(fireRef);
   $scope.list = angularFireCollection( fireRef.limit(50), $scope, "list", {} );
 
