@@ -1,12 +1,12 @@
 'use strict';
 
-window.App = angular.module('xwcApp', ['firebase']);
+var xwc = angular.module('xwc', ['firebase']);
 
-App.config(function ($routeProvider) {
+xwc.config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+        controller: 'xwcMainCtrl'
       })
       .otherwise({
         redirectTo: '/'
