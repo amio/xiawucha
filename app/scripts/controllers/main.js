@@ -6,7 +6,7 @@ function xwcMainCtrl ($scope, angularFireCollection) {
   if( window.localStorage ){
     $scope.userName = localStorage.getItem( 'user-name' ) || '';
     $scope.$watch( 'userName', function( newValue ){
-      localStorage.setItem( 'user-name', newValue );
+      localStorage.setItem( 'user-name', newValue || '' );
     });
   }else{
     $scope.userName = '';
