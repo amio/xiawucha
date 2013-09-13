@@ -8,6 +8,8 @@ function xwcMainCtrl ($scope, angularFireCollection) {
     $scope.$watch( 'userName', function( newValue ){
       localStorage.setItem( 'user-name', newValue );
     });
+  }else{
+    $scope.userName = '';
   }
 
   var timeOffset = 1000*60*(new Date()).getTimezoneOffset();
